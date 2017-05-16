@@ -22,8 +22,8 @@ public class StreamApi {
         List<Integer> list = IntStream.range(1, 100).boxed().collect(Collectors.toList());
         System.out.println(list.stream().count());
 
-        Double avarage = list.stream().collect(Collectors.averagingInt(item -> item));
-        System.out.println(avarage);
+        Double average = list.stream().collect(Collectors.averagingInt(item -> item));
+        System.out.println(average);
 
         IntSummaryStatistics iss = list.stream().collect(Collectors.summarizingInt(value -> value));
         System.out.println(iss);
